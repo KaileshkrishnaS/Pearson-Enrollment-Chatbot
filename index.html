@@ -202,10 +202,10 @@ async function flow(){
   prog(10);
 
   await bot(`Hi ${A.name}! 👋😊 Good to meet you!`);
-  await bot('Can we enrol by chatting? 💬 (Y/N)');
-  const y=rec('Can we enrol by chatting (Y/N)?',await ask('chips',{opts:['Y – Yes! 🎉','N – No 🙅']}));
+  await bot('Can we enroll by chatting? 💬 (Y/N)');
+  const y=rec('Can we enroll by chatting (Y/N)?',await ask('chips',{opts:['Y – Yes! 🎉','N – No 🙅']}));
   if(y[0]==='N'){
-    await bot('No worries! 😊 Come back anytime you’d like to enrol via chat. See you soon, '+A.name+'! 👋');
+    await bot('No worries! 😊 Come back anytime you’d like to enroll via chat. See you soon, '+A.name+'! 👋');
     dock.innerHTML='<button onclick="location.reload()" style="width:100%">Start again 🔄</button>';
     return;
   }
